@@ -1,0 +1,75 @@
+#sdSlider-wrapper {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+#slider {
+	overflow: hidden;
+	position: relative;
+	list-style: none outside none;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+#slider > li {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+#slider > li > img {
+	margin: auto;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+#slider > li:not(.active) {
+	/*display: none;*/
+}
+
+.control-wrapper {
+	position: relative;
+}
+
+.control-wrapper span {
+	border-radius: 50%;
+	background-color: #ccc;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.control-wrapper span.active {
+	background-color: #146;
+}
+
+.control-wrapper span:hover {
+	border: 1px solid #146;
+}
+
+i.sdArrow {
+	color: #ccc;
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	margin-top: -24px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+i.sdArrow:not(.disabled):hover {
+	color: #146;
+	cursor: pointer;
+}
+
+i.sdArrow.disabled {
+	opacity: 0.25;
+	pointer-events: none;
+}
