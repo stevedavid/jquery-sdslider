@@ -16,9 +16,9 @@
             if($(this).length == 1) {
                 new $.sdSlider(this, options);
             } else if($(this).length > 1) {
-                console.error($.messages.severalelents);
+                console.error($.messages.severalElements);
             } else if($(this).length == 0) {
-                console.error($.messages.zeroelent);
+                console.error($.messages.zeroElement);
             }
 
             return this;
@@ -27,8 +27,9 @@
 
     $.messages = {
         imgAndLiMismatch: '[jQuery.sdSlider] Error: the number of list items and the number of <img src> mismatch.',
-        severalelents: '[jQuery.sdSlider] Error: several DOM element have been detected. Are you sure you\'re using the right selector?',
-        noImgFound: '[jQuery.sdSlider] Error: no <img> tag was found within the <li>.'  
+        severalElements: '[jQuery.sdSlider] Error: several DOM element have been detected. Are you sure you\'re using the right selector?',
+        noImgFound: '[jQuery.sdSlider] Error: no <img> tag was found within the <li>.',
+        zeroElement: '[jQuery.sdSlider] Error: couldn\'t find the slider. It seems you have targetted no element.'
     };
 
 
